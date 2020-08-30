@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93" id="untitled1PageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="EmpView1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="EmpView1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="EmpView1Iterator" id="EmpView1">
+      <nodeDefinition DefName="model.vo.EmpView" Name="EmpView10">
+        <AttrNames>
+          <Item Value="Empno"/>
+          <Item Value="Comm"/>
+          <Item Value="Deptno"/>
+          <Item Value="Ename"/>
+          <Item Value="Hiredate"/>
+          <Item Value="Job"/>
+          <Item Value="Mgr"/>
+          <Item Value="Sal"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>
